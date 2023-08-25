@@ -1,0 +1,13 @@
+<%- include("../partials/header") %>
+
+<h1 class="text-center" id="notHead">Notifications</h1>
+
+<div class="list-group text-center" id="notList">
+    <% allNotifications.forEach(function(notification) { %>
+        <a class="list-group-item list-group-item-action infoLink" href="/blogs/<%= notification.blogId %>">
+            <%= notification.username %> created a New Blog, <%= notification.blogTitle %>
+        </a>
+    <% }); %>
+</div>
+
+<%- include("../partials/footer") %>

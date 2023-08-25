@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Merienda+One&display=swap');
+
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
+h1,h2,h4 {
+    font-family: 'Merienda One', cursive;
+}
+
+
+/*=========================*/
+/*Validation Messages*/
+/*=========================*/
+
+.color-red{
+    color: red;
+}
+
+.color-green{
+    color: green;
+}
+
+
+/*=========================*/
+/*Index page of Blogs*/
+/*=========================*/
+
+.cardImg{
+    height: 300px;
+    object-fit:cover;
+}
+
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/*==========*/
+/*Navbar*/
+/*==========*/
+
+#homeButton{
+    color: white;
+}
+
+.navbar-brand{
+    font-family: 'Merienda One', cursive;
+    font-size: 2em;
+}
+
+.navbar-dark .navbar-toggler{
+    border:none;
+    outline:none;
+}
+
+.nav-link{
+    font-family: 'Cabin', sans-serif;
+    font-size:1.2em;
+}
+
+/*=======================*/
+/*New page of Blogs*/
+/*=======================*/
+
+.formClass{
+    width:80%;
+    margin:0 auto;
+}
+
+/*=======================*/
+/*Edit page of Blogs*/
+/*=======================*/
+
+.editImg{
+    width:150px;
+    height: 150px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+/*=========================*/
+/*Sign-Up and Edit Profile*/
+/*=========================*/
+
+.custom-file-upload{
+	border: 1px solid black;
+    display: inline-block;
+    padding: 3% 6%;
+    cursor: pointer;
+    border-radius: 15%;
+}
+.custom-file-upload.blogFile{
+    padding: 1% 2%;
+    border-radius: 15%;
+}
+.fas.fa-camera-retro{
+	font-size: 9em;
+	opacity: 0.75;
+}
+.fas.fa-camera-retro.blogIcon{
+	font-size: 12em;
+}
+.fas.fa-asterisk{
+    font-size: 0.4em;
+    position: relative;
+    bottom:8px;
+    left:2px;
+    color:red;
+}
+.registerForm{
+    margin-top:40px;
+}
+
+/*=========================*/
+/*Login Page*/
+/*=========================*/
+
+.container-fluid.login{
+    width: 50%; 
+    margin: 40px auto;
+}
+
+/*======================*/
+/*Show page of Blogs*/
+/*======================*/
+
+.container-fluid.showCon{
+    width:85%;
+}
+
+.blogDelete {
+    display: inline;
+}
+
+.card{
+    border: none;
+}
+
+.carousel.slide{
+    margin: 20px auto;
+    width: 70%;
+}
+
+.blogImg{
+   height:600px;
+   object-fit:cover;
+   margin: 20px auto;
+   border-radius:20px;
+}
+
+.addNewComment{
+    border-left: 5px solid #00C851; 
+    margin:20px;
+}
+
+.addNewCommentInner{
+    margin:20px 15px;
+}
+
+
+.infoLink{
+    background-color: #343a40;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.infoLink:hover{
+    color: black;
+}
+
+#allLikes{
+    color:white;
+}
+
+#allLikes:hover{
+    color: black;
+}
+
+/*======================*/
+/*Header file of Blogs*/
+/*======================*/
+
+#navNotification{
+    color: white;
+}
+
+/*======================*/
+/* User Avatar */
+/*======================*/
+
+#userAvatar{
+    border-radius: 50%; 
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/*======================*/
+/* Notifications Index */
+/*======================*/
+
+#notHead {
+    margin-bottom: 40px;
+}
+
+#notList {
+    margin: 0 25%;
+}
+
+@media only screen and (max-width: 700px){
+    
+    /*Show Page*/
+    .blogImg{
+        height:400px;
+        width: 100%;
+    }
+    .navbar-brand{
+      font-size:1.5em;
+    }
+    .nav-link{
+      font-size:1em;
+    }
+    .container-fluid.showCon{
+        width:100%;
+    }
+    .btn {
+        font-size: 0.60em;
+    }
+    h4{
+        font-size:1em;
+    }
+    .indComment{
+        font-size:0.8em;
+    }
+    
+    /*Notification*/
+    #notList{
+        margin: 0 10%;
+    }
+    h1{
+        font-size:2em;
+    }
+    
+    /* Login */
+    .container-fluid.login{
+        width: 90%; 
+        margin: 40px auto;
+    }
+    
+    /* Register */
+    .formClass{
+        width:90%;
+    }
+    .registerForm{
+        margin-top:10px;
+    }
+}

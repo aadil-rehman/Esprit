@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Esprit | <%= user.username %>'s Blogs</title>
+        <link rel="stylesheet" href="/stylesheets/blogs.css">
+    </head>
+    <body>
+        <section class="vintalight" id="vintalight">
+            <% if(blogs.length) { %>
+                <% blogs.forEach(function(blog){ %>
+                    <figure class="vintalight__container">
+                        <div class="vintalight__photo">
+                            <span class="blogLink">/blogs/<%= blog._id %></span>
+                            <img class="vintalight__img" src="<%= blog.images[0].url %>?amp;h=750&amp;auto=compress&amp;cs=tinysrgb" alt="<%= blog.title %>">
+                        </div>
+                        <figcaption class="vintalight__caption" >
+                            <h3 class="vintalight__text" style="padding: 0 20px; text-align: center;"><%= blog.title.substring(0,15) %>...</h3>
+                        </figcaption>
+                    </figure>
+                <% }); %>
+            <% } else {%>
+            <div class = "caption">
+                <h4> <%= user.username %> have not submitted any blog yet... </h4>
+            </div>
+            <% } %>
+        
+        </section>
+        <script src="/scripts/blogs.js"></script>
+    </body>
+</html>
+
